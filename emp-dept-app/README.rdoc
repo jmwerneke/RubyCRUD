@@ -5,22 +5,38 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version  Rails 4.2.4
 
-* System dependencies
+* System dependencies 
 
-* Configuration
+* Configuration  SQLLite 
+  Run rake db:migrate 
+    
+* Database initialization enter records in seed.rb file or redirect to link to file
+  Run rake db:seed
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
+* How to run the test suite   
+  $ rake db:migrate or
+    db:test:prepare
+  $ rake db:test:load
+  
+  $ rails generate scaffold post title:string body:text
+...
+   create  app/models/post.rb
+   create  test/unit/post_test.rb
+   create  test/fixtures/posts.yml
+   
+   $ ruby -Itest test/unit/post_test.rb
+   
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
+* Deployment instructions -AWS ElasticBeanstalk 
+  ~/eb-rails$ zip ../rails-default.zip -r * .[^.]*
+  upload to ElasticBeanstalk
+  create a custom domain name and enable HTTPS
+  
+  
+  
 * ...
 
 
