@@ -1,0 +1,10 @@
+<h1><%= @department.dept_num %></h1>
+<h1><%= @department.dept_name %></h1>
+
+<%= link_to 'Remove', @department, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<ul>
+    <% @departments.each do |employee| %>
+       <li><% link_to employee.name, employee_path(employee) %><li>
+      <% end %>
+  <ul>

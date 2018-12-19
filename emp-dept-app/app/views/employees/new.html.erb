@@ -1,0 +1,24 @@
+
+<h3>Create a Employee</h3>
+<%= form_with model: @employee do |form| %>
+  <%= form.text_field :emp_num, placeholder: "employee number" %>
+  <%= form.text_field :name, placeholder: "employee name" %>
+  <%= form.text_field :address, placeholder: "employee address" %>
+  <%= form.text_field :email, placeholder: "employee email" %>
+  <%= form.text_field :phone, placeholder: "employee phone number" %>
+  <%= form.text_field :dept_num, placeholder: "department number" %>
+  <%= form.text_field :dept_name, placeholder: "department name" %>
+ <%= form.submit %>
+<% end %>
+
+<!-- <%= form_for @employee do |form| %>
+  <%= form.text_field :emp_num, placeholder: "employee number" %>
+  <%= form.text_field :name, placeholder: "employee name" %>
+  <%= form.text_field :address, placeholder: "employee address" %>
+  <%= form.text_field :email, placeholder: "employee email" %>
+  <%= form.text_field :phone, placeholder: "employee phone number" %>
+  <%= form.text_field :dept_num, placeholder: "department number" %>
+  <%= form.text_field :dept_name, placeholder: "department name" %>
+   <%= form.submit %>
+<% end %> -->
+

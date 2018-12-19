@@ -1,0 +1,7 @@
+<h3>Update Department Details</h3>
+<%= form_with model: @department do |form| %>
+  <%= form.text_field :dept_num, placeholder: "department number" %>
+  <%= form.text_field :dept_name, placeholder: "department name" %>
+
+  <%= form.submit %>
+<% end %>

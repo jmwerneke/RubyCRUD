@@ -1,0 +1,11 @@
+<h1><%= @employee.emp_num %></h1>
+<h1><%= @employee.name %></h1>
+<h1><%= @employee.address %></h1>
+<h1><%= @employee.email %></h1>
+<h1><%= @employee.phone %></h1>
+<h1><%= @employee.dept_num %></h1>
+<h1><%= @employee.dept_name %></h1>
+
+ <%= link_to 'Remove', @employee, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+

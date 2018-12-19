@@ -1,0 +1,6 @@
+Employee.create(emp_num: '01', name: 'Simon Peter', address: '123 Galliee Rd., Roseville, CA', email:  'sp@gmail.com', phone: '916-777-1777', dept_num: '01',dept_name:  'listener services')
+Employee.create(emp_num: '02', name: 'John', address:  '456 Galliee Rd., Roseville, CA', email:  'j@gmail.com  ', phone:  '916-777-2777', dept_num: '02', dept_name:  'IT services')
+Employee.create(emp_num: '01', name: 'James', address: '789 Galliee Rd., Roseville, CA', email:  'ja@gmail.com', phone: '916-777-3777', dept_num: '01',dept_name:  'listener services')
+Employee.create(emp_num: '02', name: 'Luke', address:  '1011 Galliee Rd., Roseville, CA', email:  'l@gmail.com  ', phone:  '916-777-4777', dept_num '02',dept_name:  'IT services')
+Department.create(dept_num: '01', dept_name: 'listener services')
+Department.create(dept_num: '02', dept_name: 'IT services')
